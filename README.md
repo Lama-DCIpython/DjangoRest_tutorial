@@ -5,7 +5,7 @@ finally you will create your project with the Django-admin and create an app in 
 1- click on File--> new project in the window which will open give the project name `Django_tutorial` as in th image and make sure that there is virtual env there.
 
 
-<img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/create_new_project.png" width="250"/>\
+<img height="250" src="[/home/user/PycharmProjects/Django_tutorial/images/create_new_project.png](https://github.com/Lama-DCIpython/DjangoRest_tutorial/blob/main/images/create_new_project.png)" width="250"/>\
 2- open a terminal in Pycharm and double check that you are in the right directory and your  virtual env is activated as in image\
 <img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/active_venv.png" width="250"/>\
 
