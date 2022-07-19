@@ -10,6 +10,7 @@ finally you will create your project with the Django-admin and create an app in 
 <img height="250" src="https://github.com/Lama-DCIpython/DjangoRest_tutorial/blob/main/images/active_venv.png" width="250"/>\
 
 ## B. creating virtual environment in the terminal:
+You can also create the virtual environment manually in the terminal. It is useful to know how to do this for the case you are supposed to right a code without using Pycharm\
 1- Navigate to the directory in which you want to put your project (e.g` ~ `for your home or `~/PycharmProjects`)\
 2- `mkdir Django_tutorial`\
 3- `cd Django_tutorial`\
@@ -25,7 +26,7 @@ finally you will create your project with the Django-admin and create an app in 
 
 
 ## Installing the requirements
-
+From within the directory which you created and moved in after you activated the virtual env run hte following commands
 ```
 # Install Django and Django REST framework into the virtual environment
 pip install django
@@ -49,13 +50,21 @@ and your interpreter settings will look like the image.
 ## Set up a new project with a single application
 ```commandline
 django-admin startproject tutorial .  # Note the trailing "." character
+
+```
+
+This will create a Django project package named `tutorial` inside your `Django_tutorial` directory.
+
+After that you can remain in the same directory: `Django_tutorial` and run the `django-admin startapp quickstart` command (this a better and less confusing approach), or you change directory to the tutorial directory as it was described in the tutorial website , _which will require more attention and was causing confusion in creating new models_ _(you will see this when you scroll down to the next section and to the  settings section below)_\
+I choose to redo the work as the tutorial was describing to show how to solve the issues which will appear.
+```commandline
 cd tutorial
 django-admin startapp quickstart
 cd ..
 ```
 your Directory Tree will look like ![](https://github.com/Lama-DCIpython/DjangoRest_tutorial/blob/main/images/filetree.png)
 
-## creating the tables of your database 
+## Creating the tables of your database 
 Now sync your database for the first time:
 
 `python manage.py migrate`
@@ -66,7 +75,8 @@ We'll also create an initial user named `admin` with a password of `password123`
 
 Once you've set up a database and the initial user is created and ready to go, open up the app's directory and we'll get coding...
 
-Now in the `tutorial/quickstart/apps.py` change the app name into `'tutorial.quickstart'`
+_**Now only if you have done everything as in the last section (the confusing approach) then**_ go to the `tutorial/quickstart/apps.py` change the app name(variable) into `'tutorial.quickstart'`\ 
+if you have not put your quickstart package inside the tutorial package **you do not need to change anything**
 
 ## Serializers
 First up we're going to define some serializers. Let's create a new module named `tutorial/quickstart/serializers.py` that we'll use for our data representations.\
@@ -147,7 +157,7 @@ REST_FRAMEWORK = {
 ```
 
 # Settings
-Add `'rest_framework'` and `'tutorial.quickstart'` to `INSTALLED_APPS`. The settings module will be in `tutorial/settings.py`
+Add `'rest_framework'` and `'tutorial.quickstart'` (or just `'quickstart'` if you did not change the name variable in the apps.py) file to `INSTALLED_APPS`. The settings module will be in `tutorial/settings.py`
 
 # Running the server to test the API
 
