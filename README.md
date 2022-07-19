@@ -2,12 +2,12 @@
 you will find here how to create and the virtual environment either through Pycharm Projects or in the Terminal and how to install the requirements for your Django and Django Rest Api Framework
 finally you will create your project with the Django-admin and create an app in it.
 ## A. creating virtual environment through Pycharm projects:
-1- click on File--> new project in the window which will open give the project name `Django_tutorial` as in th image and make sure that there is virtual env there.\
+1- click on File--> new project in the window which will open give the project name `Django_tutorial` as in th image and make sure that there is virtual env there.
 
 
-<img height="250" src="/home/user/PycharmProjects/Tut/images/create_new_project.png" width="250"/>\
+<img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/create_new_project.png" width="250"/>\
 2- open a terminal in Pycharm and double check that you are in the right directory and your  virtual env is activated as in image\
-<img height="250" src="/home/user/PycharmProjects/Tut/images/active_venv.png" width="250"/>\
+<img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/active_venv.png" width="250"/>\
 
 ## B. creating virtual environment in the terminal:
 1- Navigate to the directory in which you want to put your project (e.g` ~ `for your home or `~/PycharmProjects`)\
@@ -18,10 +18,10 @@ finally you will create your project with the Django-admin and create an app in 
 5- create the virtual environment by running this command: `python3 -m venv env`\
 6- activate it by: `source env/bin/activate`\
 7- If the virtual environment appears only in the terminal as active, but you don't see it in the project section in Pycharm then go to the right-down corner of pycharm and click on the python interpreter settings there this will open a window for you where you can delete the invalid interpreter if any and add a new correct one inside your venv\
-<img height="250" src="/home/user/PycharmProjects/Tut/images/interpreter_1.png" width="250"/>\
-<img height="250" src="/home/user/PycharmProjects/Tut/images/interpreter-2.png" width="250"/>\
+<img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/interpreter_1.png" width="250"/>\
+<img height="250" src="/home/user/PycharmProjects/Django_tutorial/images/interpreter-2.png" width="250"/>\
 8- your project window should be now like this: \
-<img height="250" src="/home/user/PycharmProjects/Tut/images/Project_window.png" width="250"/>
+<img height="250" src="/home/user/PycharmProjects/TDjango_tutorialut/images/Project_window.png" width="250"/>
 
 
 ## Installing the requirements
@@ -53,7 +53,7 @@ cd tutorial
 django-admin startapp quickstart
 cd ..
 ```
-your Directory Tree will look like ![](/home/user/PycharmProjects/Tut/images/filetree.png)
+your Directory Tree will look like ![](/home/user/PycharmProjects/Django_tutorial/images/filetree.png)
 
 ## creating the tables of your database 
 Now sync your database for the first time:
