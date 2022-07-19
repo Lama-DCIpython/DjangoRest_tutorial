@@ -177,7 +177,7 @@ The admin has the permission to manage the database and set user (default passwo
 
 [sourse and additional info](https://www.django-rest-framework.org/tutorial/quickstart/)
 
-## adding other models and a html file for the homepage template
+## Adding other models and a html file for the homepage template
 #TODo still under editing
 
 Let's say you want to make a blog website where you add blog posts to your blog then you need to create Post model in the `tutorial/quickstart/views.py`
@@ -203,7 +203,7 @@ class Book(models.Model):
         ordering = ['pub_date']
 
 ```
-## Create tables for models in your database
+## Create tables for the new models in your database
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your terminal(another window than where the server is running) and type
 `python manage.py makemigrations quickstart`. It will look like this:
@@ -230,7 +230,7 @@ Running migrations:
 ```
 
 Our Book model is now in our database! It would be nice to see it, right? Therefore, we need to register it in the Admin Site.
-## Django admin
+## Django admin again
 To make the books appear on the admins site we need to register this model in the `tutorial/quickstart/admin.py`
 
 Add the following to the existing code there
@@ -271,8 +271,9 @@ Add also `router.register(r'books', views.BookViewSet)` to the `tutorials/urls.p
 
 The  "books": "http://127.0.0.1:8000/books/" will appear now on your homepage //127.0.0.1:8000
 
-## adding a html template with a books list to your homepage
-to be continued
+## Adding a html template with a books list to your homepage
+#todo still to be continued\
+
 To the `tutorial/quickstart/views.py` file add:
 
 ```python
