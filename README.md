@@ -55,16 +55,17 @@ django-admin startproject tutorial .  # Note the trailing "." character
 
 This will create a Django project package named `tutorial` inside your `Django_tutorial` directory.
 
-After that you can remain in the same directory: `Django_tutorial` and run the `django-admin startapp quickstart` command (this a better and less confusing approach), or you change directory to the tutorial directory as it was described in the tutorial website , _which will require more attention and was causing confusion in creating new models_ _(you will see this when you scroll down to the next section and to the  settings section below)_\
-I choose to redo the work as the tutorial was describing to show how to solve the issues which will appear.
+**After that you can remain in the same directory: `Django_tutorial` and run the `django-admin startapp quickstart` command (this a better and less confusing approach)**, (or you change directory to the tutorial directory as it was described in the tutorial website , _which will require more attention and was causing confusion in creating new models_ _(you will see this when you scroll down to the next section and to the  settings section below)_\)
+
 ```commandline
-cd tutorial
+
 django-admin startapp quickstart
 cd ..
 ```
 your Directory Tree will look like ![](https://github.com/Lama-DCIpython/DjangoRest_tutorial/blob/main/images/filetree.png)
 
 ## Creating the tables of your database 
+
 Now sync your database for the first time:
 
 `python manage.py migrate`
@@ -75,8 +76,8 @@ We'll also create an initial user named `admin` with a password of `password123`
 
 Once you've set up a database and the initial user is created and ready to go, open up the app's directory and we'll get coding...
 
-_**Now only if you have done everything as in the last section (the confusing approach) then**_ go to the `tutorial/quickstart/apps.py` change the app name(variable) into `'tutorial.quickstart'`\ 
-if you have not put your quickstart package inside the tutorial package **you do not need to change anything**
+_**Now if you have done the confusing approach in the last apprach then**_ go to the `tutorial/quickstart/apps.py` change the app name(variable) into `'tutorial.quickstart'`\ 
+**if you have not put your quickstart package inside the tutorial package you do not need to change anything**
 
 ## Serializers
 First up we're going to define some serializers. Let's create a new module named `tutorial/quickstart/serializers.py` that we'll use for our data representations.\
